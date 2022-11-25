@@ -1,0 +1,23 @@
+"nom_champ";"type_champ";"description_champ"
+id_aerogenerateur;varchar;Numéro de l'aérogénérateur
+id_parc;varchar;Numéro ICPE du parc de l'aérogénérateur
+code_insee;varchar;Code INSEE de la commune d'implantation
+nom_commune;varchar;Nom de la commune d'implantation du parc
+code_dept;varchar;Code du département de la commune d'implantation
+code_reg;varchar;Code de la région de la commune d'implantation
+hauteur_totale;numeric;Hauteur de l’éolienne en bout de pale, depuis le niveau du sol (m).
+hauteur_mat_nacelle;numeric;Hauteur du haut de la nacelle, depuis le niveau du sol (m)
+diametre_rotor;numeric;Diamètre du rotor (m)
+cote_ngf;numeric;Côte NGF correspondant à l'emplacement du mât (m)
+periode_allumage_lib;varchar;Période d'allumage des feux (libellé)
+periode_allumage_desc;varchar;Période d'allumage des feux (description)
+type_feu_lib;varchar;Type de feux (libellé)
+type_feu_desc;varchar;Type de feux (description)
+date_mise_en_service;text;Date de mise en service de l'éolienne
+constructeur;varchar;Constructeur de l'éolienne
+reference_modele;varchar;Référence commerciale de l'éolienne
+x_aerogenerateur;float4;Coordonnée X du mat de l'éolienne
+y_aerogenerateur;float4;Coordonnée Y du mat de l'éolienne
+epsg;varchar;Code EPSG des coordonnées
+libelle;varchar;Libellé du code EPSG
+date_maj;date;Date de récupération des données dans la base source

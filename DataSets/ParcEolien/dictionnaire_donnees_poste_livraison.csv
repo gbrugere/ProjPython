@@ -1,0 +1,8 @@
+"nom_champ";"type_champ";"description_champ"
+id_poste_livraison;varchar;Numéro du poste
+id_parc;varchar;Numéro ICPE du parc du poste
+x_poste_livraison;float4;Coordonnée X du poste
+y_poste_livraison;float4;Coordonnée Y du poste
+epsg;varchar;Code EPSG des coordonnées
+libelle;varchar;Libellé du code EPSG
+date_maj;date;Date de récupération des données dans la base source
