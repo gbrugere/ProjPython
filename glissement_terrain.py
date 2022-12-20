@@ -1,4 +1,4 @@
-import math 
+from math import *
 import pandas as pd 
 
 #Calcule la distance entre deux point repérés par leur latitude et leur longitude
@@ -22,7 +22,7 @@ def distance_lat_long(lat1, lat2, lon1, lon2):
     return(c * r)
 
 #evenements à moins de 10km et datant de moins de 100 ans
-def event_less_10km(lat1,lon1): 
+def event_less_10km(lat1, lon1, df): 
                                 #lat1 lon1 : latitude, longitude de l'habitation considérée
  
   dico={"distance":[],"date":[]}
@@ -40,7 +40,7 @@ def event_less_10km(lat1,lon1):
   return(dico)
 
 
-def calcul_risque(dico): #dico : celui return par event_less_10km 
+def calcul_risque(dico, df): #dico : celui return par event_less_10km 
 
   risque=0
   quali_data=len(dico["date"]) #proportion d'event pour lasquelles on a la date/nb total d'event
