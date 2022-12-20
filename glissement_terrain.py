@@ -1,25 +1,6 @@
 import math 
 import pandas as pd 
 
-
-#prend une adresse comme argument et retourne les coordonnées GPS
-def adresse_to_gps(dep,num,nom_voie,ville,code_postal):
-
-    adresses_dep = pd.read_csv("/Users/corentinpla/Downloads/Adresses/adresses-"+str(dep)+".csv", sep=";") #recuperation des adresses postales correspondant au département de l'utilisateur
-    
-    foyer_infos = adresses_dep[(adresses_dep["numero"] == num) & (adresses_dep["nom_commune"] == ville) & (adresses_dep["nom_voie"] == nom_voie)] 
-    foyer = foyer_infos.to_numpy()
-    foyer = foyer.tolist()
-    print(foyer) #informations sur le domicile de l'utilisateur
-
-    #Coordonnees geographiques du dommicile 
-    lo = foyer[0][12]
-    la = foyer[0][13]
-
-    return([lo, la])
-
-
-
 #Calcule la distance entre deux point repérés par leur latitude et leur longitude
 def distance_lat_long(lat1, lat2, lon1, lon2):
      
