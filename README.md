@@ -13,7 +13,7 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
         <li><a href="#Stats-Des">Statistiques Descriptives</a></li>
       <li><a href="#Code-Principal">Code principal</a></li>
      </ul>
-    <li><a href="Ccontact">Contact</a></li>
+    <li><a href="#Contact">Contact</a></li>
     <li><a href="#Bibliographie">Bibliographie</a></li>
   </ol>
 </details>
@@ -57,8 +57,8 @@ This is an example of how to list things you need to use the software and how to
 <!-- CONTACT -->
 ## Contact
 
-Grégoire Brugère - gregoire.brugere@ensae.fr
-Corentin Pla - corentin.pla@ensae.fr
+Grégoire Brugère - gregoire.brugere@ensae.fr \\
+Corentin Pla - corentin.pla@ensae.fr 
 Sophie Bataille - sophie.bataille@ensae.fr
 
 
