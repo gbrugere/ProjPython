@@ -49,5 +49,5 @@ def secheresse(dep,num,nom_voie,ville,code_postal):
   #Fonction position géographique de l'habitation -> risque sécheresse précis associé
 
 
-  print("Le score de sécheresse (de 1 à 5) de l'habitation est de :"+str(argile_dep))
-  return(argile_dep)
+  print("Le score de sécheresse (de 1 à 5) de l'habitation est de :"+str(argile_dep*(5/3)))
+  return(argile_dep*(5/3))
