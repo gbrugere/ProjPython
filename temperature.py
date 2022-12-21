@@ -57,9 +57,15 @@ def get_decomposition(df_temperature):
     fig = decomposition.plot()
     plt.show()
 
+def annee_to_horizon(annee):
+    horizon=52*(annee-2010)
+
+    return(horizon)
+
 #retourne les prédiction de temprérature pour un horizon donné, les paramètres du model sont pré rentrés. 
 #model entrainé entre 2010 et 2019 et testé sur 2019, 2020, 2021, mi 2022
-def get_prediction_graph(horizon,df_temperature): 
+def get_prediction_graph(annee,df_temperature): 
+    horizon=annee_to_horizon(annee)
     y_train= df_temperature[:"2019W01"]["Température"]
     y=df_temperature["Température"]
     mod = sm.tsa.statespace.SARIMAX(y_train,
@@ -81,7 +87,20 @@ def get_prediction_graph(horizon,df_temperature):
     plt.legend()
     plt.show()
 
-#retourne les prédiction de temprérature pour un horizon donné, les paramètres du model sont pré rentrés. 
+    return(pred.predicted_mean,pred_ci)
+
+def temperature_max(pred,pred_ci):
+  id=pred.idxmax()
+  print("la temperature maximale annuelle prédite est:")
+  print(pred.at[id]-273)
+  print("l'intervalle de confiance à 95 est:")
+  print(pred_ci.at[id,'upper Température']-273)
+  print(pred_ci.at[id,'lower Température']-273)
+
+
+
+
+
 
 
 
