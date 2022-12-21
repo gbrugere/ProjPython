@@ -20,13 +20,13 @@ def min_dist_centrales(long, lat, centrales) :
 #Calcul du risque nucléaire
 def risque_nucleaire(longitude, latitude, centrales):
     d_min, r = min_dist_centrales(longitude, latitude, centrales)
-    if d_min <= 5 :
+    if d_min <= 5000 :
         return(20)
-    elif d_min <= 20 :
+    elif d_min <= 2000 :
         return(15)
-    elif d_min <= 60 :
+    elif d_min <= 6000 :
         return(10)
-    elif d_min <= 100 :
+    elif d_min <= 10000 :
         return(5)
     else :
         return(1)
