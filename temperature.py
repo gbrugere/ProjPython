@@ -20,7 +20,7 @@ def get_week(s):
   if week>=10:
 
     return(s[:4]+"W"+str(week))
-  
+
   else:
     return(s[:4]+"W0"+str(week))
 
@@ -41,7 +41,7 @@ def test_saisonalité(df_temperature):
     for k in range (10,22):
         print(((df_temperature[df_temperature["Annee"] =="20"+str(k)].shape[0])==52) or ((df_temperature[df_temperature["Annee"] =="20"+str(k)].shape[0])==53))
 
-#Temperature maximale journalière au cours du temps 
+#Temperature maximale journalière au cours du temps
 def plot_temperature(df_temperature):
     y=df_temperature[["Température"]]
     y.plot()
@@ -62,9 +62,9 @@ def annee_to_horizon(annee):
 
     return(horizon)
 
-#retourne les prédiction de temprérature pour un horizon donné, les paramètres du model sont pré rentrés. 
+#retourne les prédiction de temprérature pour un horizon donné, les paramètres du model sont pré rentrés.
 #model entrainé entre 2010 et 2019 et testé sur 2019, 2020, 2021, mi 2022
-def get_prediction_graph(annee,df_temperature): 
+def get_prediction_graph(annee,df_temperature):
     horizon=annee_to_horizon(annee)
     y_train= df_temperature[:"2019W01"]["Température"]
     y=df_temperature["Température"]
@@ -96,6 +96,7 @@ def temperature_max(pred,pred_ci):
   print("l'intervalle de confiance à 95 est:")
   print(pred_ci.at[id,'upper Température']-273)
   print(pred_ci.at[id,'lower Température']-273)
+  return(pred.at[id]-273)
 
 
 
