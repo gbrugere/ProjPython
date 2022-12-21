@@ -1,12 +1,12 @@
 # Impact du réchauffement climatique sur les prix de l'immobilier
 Projet mené dans le cadre de notre 2A à l'ENSAE.
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABLE DES MATIERES -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Table des Matières</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Idée-principale">Idée principale</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
