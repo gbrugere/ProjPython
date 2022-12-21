@@ -25,7 +25,7 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour</a>)</p>
 
 
 
@@ -53,16 +53,16 @@ This is an example of how to list things you need to use the software and how to
 
 
 
-
+<p align="right">(<a href="#readme-top">retour</a>)</p>
 <!-- CONTACT -->
 ## Contact
 
-Grégoire Brugère - gregoire.brugere@ensae.fr \\
-Corentin Pla - corentin.pla@ensae.fr 
-Sophie Bataille - sophie.bataille@ensae.fr
+Grégoire Brugère - gregoire.brugere@ensae.fr  
+Corentin Pla - corentin.pla@ensae.fr   
+Sophie Bataille - sophie.bataille@ensae.fr  
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour</a>)</p>
 
 
 
@@ -72,6 +72,6 @@ Sophie Bataille - sophie.bataille@ensae.fr
 
 * [Choose an Open Source License](https://choosealicense.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour</a>)</p>
 
 
