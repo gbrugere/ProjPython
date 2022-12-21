@@ -37,13 +37,13 @@ L’objectif de notre travail est donc de proposer une évaluation des risques n
 ## Utilisation
 
 Notre projet se décompose en deux parties :  
-    * Une partie dédiée aux statistiques descriptives  
-    * Une partie contenant le code principal de notre projet  
+    · Une partie dédiée aux statistiques descriptives  
+    · Une partie contenant le code principal de notre projet  
 
 
 ### Statistiques Descriptives
 
-Décrire comment sont constituer nos notebooks de stats des
+Les notebooks ``` Nucléaire.ipynb ```
 
 ### Code Principal
 
