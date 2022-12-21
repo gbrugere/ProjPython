@@ -70,7 +70,7 @@ Sophie Bataille - sophie.bataille@ensae.fr
 ## Bibliographie
 ecrire la bibliographie, j'ai mis un exemple au hasard faut juste reproduire la forme
 
-* [Choose an Open Source License](https://choosealicense.com)
+* [[1] Choose an Open Source License](https://choosealicense.com)
 
 
 
