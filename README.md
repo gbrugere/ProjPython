@@ -1,4 +1,4 @@
-# Impact du réchauffement climatique sur les prix de l'immobilier
+# Estim'risque : estimez les risques naturels auxquels est soumise votre habitation
 Projet mené dans le cadre de notre 2A à l'ENSAE.
 
 <!-- TABLE DES MATIERES -->
