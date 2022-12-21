@@ -51,3 +51,4 @@ def secheresse(dep,num,nom_voie,ville,code_postal):
 
   print("Le score de sécheresse (de 1 à 5) de l'habitation est de :"+str(argile_dep))
   return(argile_dep)
+#
