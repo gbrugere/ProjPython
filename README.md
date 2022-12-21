@@ -23,9 +23,7 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
 <!-- IDEE PRINCIPALE -->
 ## Idée principale
 
-
-
-<p align="right">(<a href="#readme-top">retour</a>)</p>
+But du projet etc... expliquer les grandes lignes
 
 
 
@@ -36,24 +34,20 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
 <!-- UTILISATION -->
 ## Utilisation
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Décrire grandes lignes de l'utilisation ici
 
 ### Statistiques Descriptives
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Décrire comment sont constituer nos notebooks de stats des
 
 ### Code Principal
 
+Décrire comment on utilise le notebook main (entrer addresse, etc...)
+Puis dire que pour plus de détail on peut check les sous-notebooks
 
 
 
 
-<p align="right">(<a href="#readme-top">retour</a>)</p>
 <!-- CONTACT -->
 ## Contact
 
@@ -62,13 +56,13 @@ Corentin Pla - corentin.pla@ensae.fr
 Sophie Bataille - sophie.bataille@ensae.fr  
 
 
-<p align="right">(<a href="#readme-top">retour</a>)</p>
+
 
 
 
 <!-- Bibliographie -->
 ## Bibliographie
-
+ecrire la bibliographie, j'ai mis un exemple au hasard faut juste reproduire la forme
 
 * [Choose an Open Source License](https://choosealicense.com)
 
