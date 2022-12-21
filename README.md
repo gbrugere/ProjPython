@@ -70,7 +70,11 @@ Sophie Bataille - sophie.bataille@ensae.fr
 ## Bibliographie
 ecrire la bibliographie, j'ai mis un exemple au hasard faut juste reproduire la forme
 
-* [1] [Choose an Open Source License](https://choosealicense.com)
+* [1] [Changement climatique et assurance : quelles conséquences sur la sinistralité à l’horizon 2050 ?](https://www.covea.eu/sites/default/files/2022-02/202202_Livre_Blanc_Covéa_Risques_Climatiques.pdf), Covéa, rapport publié en janvier 2022
+
+* [2] [Changement climatique : quel impact sur l’immobilier ?](https://www.traace.co/post/real-estate-and-climate-change-what-impact), Traace, avril 2022
+
+* [3] 
 
 
 
