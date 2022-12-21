@@ -7,23 +7,14 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
   <ol>
     <li>
       <a href="#Idée-principale">Idée principale</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#Utilisation">Utilisation</a></li>
+    <ul>
+        <li><a href="Stats-Des">Statistiques Descriptives</a></li>
+      <li><a href="#Code-principal">Code principal</a></li>
+     </ul>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Bibliographie">Bibliographie</a></li>
   </ol>
 </details>
 
