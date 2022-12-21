@@ -1,4 +1,4 @@
-# Estim'risque : estimez les risques naturels auxquels est soumise votre habitation
+# Estim'risque : à quels risques est soumise mon habitation
 Projet mené dans le cadre de notre 2A à l'ENSAE.
 
 <!-- TABLE DES MATIERES -->
