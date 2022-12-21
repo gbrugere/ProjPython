@@ -66,6 +66,5 @@ ecrire la bibliographie, j'ai mis un exemple au hasard faut juste reproduire la 
 
 * [Choose an Open Source License](https://choosealicense.com)
 
-<p align="right">(<a href="#readme-top">retour</a>)</p>
 
 
