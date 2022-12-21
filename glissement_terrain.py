@@ -66,3 +66,5 @@ def calcul_risque(dico): #dico : celui return par event_less_10km
     quali_data=quali_data/len(dico["date"])
     
   return (risque, quali_data)
+
+#
