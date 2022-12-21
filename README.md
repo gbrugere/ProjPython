@@ -23,7 +23,7 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
 <!-- IDEE PRINCIPALE -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]([https://example.com](http://image.noelshack.com/fichiers/2022/51/3/1671645637-capture-d-ecran-2022-12-21-19-01-00.png))
+[![Product Name Screen Shot][product-screenshot]]([http://image.noelshack.com/fichiers/2022/51/3/1671645637-capture-d-ecran-2022-12-21-19-01-00.png])
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
