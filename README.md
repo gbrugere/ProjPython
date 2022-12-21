@@ -43,12 +43,11 @@ Notre projet se décompose en deux parties :
 
 ### Statistiques Descriptives
 
-Les notebooks ``` Nucléaire.ipynb ```
+Les notebooks ```INSEE.ipynb``` et ```Stats_Nucleaire.ipynb``` affichent des statistiques à propos de divers aspects de l'immobilier
 
 ### Code Principal
 
-Décrire comment on utilise le notebook main (entrer addresse, etc...)
-Puis dire que pour plus de détail on peut check les sous-notebooks
+Le code principal se trouve dans ```main.ipynb``` le notebook demande en un premier lieu d'entrer une addresse puis calcule les différents risques immobiliers liés à cette addresse, et donne une note finale. Le code fait appelle à 6 modules externes consacrés à chaque thématiques abordés (Nucléaire, Température, ...), les codes de ces modules sont détaillés dans leurs notebooks respectifs.
 
 
 
