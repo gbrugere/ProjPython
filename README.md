@@ -43,7 +43,7 @@ Notre projet se décompose en deux parties :
 
 ### Statistiques Descriptives
 
-Les notebooks ```INSEE.ipynb``` et ```Stats_Nucleaire.ipynb``` affichent des statistiques à propos de divers aspects de l'immobilier
+Les notebooks ```INSEE.ipynb``` et ```Stats_Nucleaire.ipynb``` affichent des statistiques à propos de divers aspects de l'immobilier.
 
 ### Code Principal
 
