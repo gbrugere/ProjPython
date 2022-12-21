@@ -97,7 +97,7 @@ def temperature_max(pred,pred_ci):
   print(pred_ci.at[id,'upper Température']-273)
   print(pred_ci.at[id,'lower Température']-273)
   return(pred.at[id]-273)
-
+#
 
 
 
