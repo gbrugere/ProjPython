@@ -47,8 +47,8 @@ Les notebooks ```INSEE.ipynb```, ```Etude_Base_Argiles.ipynb``` et ```Stats_Nucl
 
 ### Code Principal
 
-Le code principal se trouve dans ```main.ipynb``` le notebook demande en un premier lieu d'entrer une addresse puis calcule les différents risques immobiliers liés à cette addresse, et donne une note finale. Le code fait appelle à 6 modules externes consacrés à chaque thématiques abordés (Nucléaire, Température, ...), les codes de ces modules sont détaillés dans leurs notebooks respectifs.
-
+Le code principal se trouve dans ```main.ipynb``` le notebook demande en un premier lieu d'entrer une addresse puis calcule les différents risques immobiliers liés à cette addresse, et donne une note finale. Le code fait appelle à 6 modules externes consacrés à chaque thématiques abordés (Nucléaire, Température, ...), les codes de ces modules sont détaillés dans leurs notebooks respectifs.  
+Additionelement le module ```levenstein.py``` permet de trouver plus facilement l'addresse entré.
 
 
 
