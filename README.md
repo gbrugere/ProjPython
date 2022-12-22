@@ -50,6 +50,7 @@ Les notebooks suivant effectuent des statistiques descriptives.
 Les attendus du projet comprennent une partie modélisation. Les modélisations que nous avons faites sont les suivantes : 
 - Nous avons codé un modèle de forecasting de température de type SARIMA. Ce dernier est entrainé sur le base ```temperature_dep.csv``` entre 2010 et 2019, testé entre 2019 et mi 2022 et utilisé pour prédire les temperéture à l'horizon 2030. Le code de ce dernier se trouve dant le module ```temperature.py``` dont le notebook correspondant est ```Sarima_tempperature.ipynb```. 
 - Pour améliorer l'experience utilisateur, nous avons aussi codé un suggesteur automatique de texte dans le cas où ce dernier ferait une faute d'ortographe mineure lorsqu'il rentre le nom de la ville ou de la rue. Ce dernier repose sur la minimisation de la distance de Levenstein. Le code se trouve dans le module ```levenstein.py```
+<br />
 ![1](https://zupimages.net/up/22/51/gdvh.png "i1") 
 ### Code Principal
 
