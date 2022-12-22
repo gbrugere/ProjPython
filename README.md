@@ -25,11 +25,11 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
 <!-- IDEE PRINCIPALE -->
 ## Idée principale
 
+
+
+
+Nous proposons une évaluation des risques naturels auxquels est soumis une habitation. L'utilisateur entre une adresse et reçoit un diagnostic complet des risques auxquels est soumise son habitation. Pour des raisons de taille des données nous nous avons limité notre travail aux départements des Bouches du **Rhône (13)**, de la **Haute Garonne (31)** et de la **Loire Atlantique (44)**. Ces trois departements sont, à notre sens représentatifs de l'ensemble des risques auxquels sont soumises les habitations en France. 
 ![2](https://zupimages.net/up/22/51/eenp.png "i2") 
-![1](https://zupimages.net/up/22/51/gdvh.png "i1") 
-
-Nous proposons une évaluation des risques naturels auxquels est soumis une habitation. L'utilisateur entre une adresse et reçoit un diagnostique complet des risques auxquels est soumise son habitation. Pour des raisons de taille des données nous nous avons limité notre travail aux départements des Bouches du **Rhône (13)**, de la **Haute Garonne (31)** et de la **Loire Atlantique (44)**. Ces trois departements sont, à notre sens représentatifs de l'ensemble des risques auxquels sont soumises les habitations en France. 
-
 
 <!-- UTILISATION -->
 ## Utilisation
@@ -50,7 +50,7 @@ Les notebooks suivant effectuent des statistiques descriptives.
 Les attendus du projet comprennent une partie modélisation. Les modélisations que nous avons faites sont les suivantes : 
 - Nous avons codé un modèle de forecasting de température de type SARIMA. Ce dernier est entrainé sur le base ```temperature_dep.csv``` entre 2010 et 2019, testé entre 2019 et mi 2022 et utilisé pour prédire les temperéture à l'horizon 2030. Le code de ce dernier se trouve dant le module ```temperature.py``` dont le notebook correspondant est ```Sarima_tempperature.ipynb```. 
 - Pour améliorer l'experience utilisateur, nous avons aussi codé un suggesteur automatique de texte dans le cas où ce dernier ferait une faute d'ortographe mineure lorsqu'il rentre le nom de la ville ou de la rue. Ce dernier repose sur la minimisation de la distance de Levenstein. Le code se trouve dans le module ```levenstein.py```
-
+![1](https://zupimages.net/up/22/51/gdvh.png "i1") 
 ### Code Principal
 
 Le code principal se trouve dans ```main.ipynb``` le notebook demande en un premier lieu d'entrer une addresse puis calcule les différents risques immobiliers liés à cette addresse, et donne une note finale. Le code fait appelle à 6 modules que nous avons codé pour chaque risque. A chaque module est associé un notebook pour l'utilisateur (le correcteur typiquement...) qui souhaiterait les executer de manière indépendante 
