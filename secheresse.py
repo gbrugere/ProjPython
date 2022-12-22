@@ -41,7 +41,7 @@ def secheresse(dep,num,nom_voie,ville,code_postal):
   df_2.to_crs(3857).plot(ax = ax, color ='orange', alpha = 0.6,zorder=2)
   df_3.to_crs(3857).plot(ax = ax, color ='red', alpha = 0.6,zorder=2)
   geo_foyer.to_crs(3857).plot(ax=ax, color="black",zorder=2)
-  ax.set_title("Cartographie des zones de sécheresse préocupantes en Haute-Garonne")
+  ax.set_title("Cartographie des zones de sécheresse préocupantes du département "+dep)
   fig.legend()
   ctx.add_basemap(ax=ax,source=ctx.providers.OpenStreetMap.Mapnik)
   plt.show()
@@ -49,11 +49,8 @@ def secheresse(dep,num,nom_voie,ville,code_postal):
   #Fonction position géographique de l'habitation -> risque sécheresse précis associé
 
 
-<<<<<<< HEAD
   print("Le score de sécheresse (de 1 à 5) de l'habitation est de :"+str(argile_dep*(5/3)))
   return(argile_dep*(5/3))
-=======
   print("Le score de sécheresse (de 1 à 5) de l'habitation est de :"+str(argile_dep))
   return(argile_dep)
 #
->>>>>>> 3b691532d7418558f60fc76726701857b49592c8
