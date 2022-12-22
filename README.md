@@ -1,4 +1,4 @@
-# Estim'risque : à quels risques est soumise mon habitation
+# Estim'risque : A quels risques est soumis mon habitation ?
 Projet mené dans le cadre de notre 2A à l'ENSAE.
 
 <!-- TABLE DES MATIERES -->
@@ -88,7 +88,6 @@ Sophie Bataille - sophie.bataille@ensae.fr
 
 <!-- Bibliographie -->
 ## Bibliographie
-ecrire la bibliographie, j'ai mis un exemple au hasard faut juste reproduire la forme
 
 * [1] [Changement climatique et assurance : quelles conséquences sur la sinistralité à l’horizon 2050 ?](https://www.covea.eu/sites/default/files/2022-02/202202_Livre_Blanc_Covéa_Risques_Climatiques.pdf), Covéa, rapport publié en janvier 2022
 
