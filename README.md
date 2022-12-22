@@ -11,7 +11,9 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
     <li><a href="#Utilisation">Utilisation</a></li>
     <ul>
         <li><a href="#Stats-Des">Statistiques Descriptives</a></li>
+        <li><a href="#Modélisation">Modélisation</a></li>
       <li><a href="#Code-Principal">Code principal</a></li>
+      <li><a href="#Données">Données</a></li>
      </ul>
     <li><a href="#Contact">Contact</a></li>
     <li><a href="#Bibliographie">Bibliographie</a></li>
@@ -24,14 +26,10 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
 ## Idée principale
 
 
-Les organismes d’assurance réfléchissent depuis plusieurs années à la manière dont il faut intégrer les risques liés au changement climatique dans leurs contrats. Un grand nombre d’entre eux ont récemment publié de nouvelles études et développé de nouveaux outils pour ne pas prendre de retard sur la situation qui évolue très vite. En effet, le consensus scientifique est clair et les dérèglements climatiques sont d’ores et déjà une réalité. En ce qui concerne l’intégration de la problématique par les organismes d’assurance, l’enjeu en leurs conséquences potentielles. D’autant plus que les disparités sont fortes sur le territoire français. Plus les risques auxquels est exposé une habitation sont élevés, plus la prime d’assurance (habitation) sera élevée. Il est donc important de bien les cartographier, à la fois pour l’assureur qui doit être solvable mais aussi pour les particuliers qui doivent être informés et qui pourraient être amené à considérer ces risques dans leur choix de mobilité.
 
 
-À la suite de nos lectures de quelques rapports d’assureurs sur la question ([1] [2]), nous avons décidé d’orienter notre projet autour de la cartographie des risques naturels en France métropolitaine. Nous nous somme inspirés d’un outil récemment développé par l’assureur Italien Generali ([3]) qui dresse une évaluation simple du degré d’exposition aux risques d’une habitation.
-
-
-L’objectif de notre travail est donc de proposer une évaluation des risques naturels auxquels est soumis une habitation. Pour des raisons de taille des données nous nous avons limité notre travail aux départements des Bouches du Rhône (13), de la Haute Garonne (31) et de la Loire Atlantique (44). Ces trois departements sont, à notre sens représentatifs de l'ensemble des risques auxquels sont soumises les habitations en France. 
-
+Nous proposons une évaluation des risques naturels auxquels est soumis une habitation. L'utilisateur entre une adresse et reçoit un diagnostic complet des risques auxquels est soumise son habitation. Pour des raisons de taille des données nous nous avons limité notre travail aux départements des Bouches du **Rhône (13)**, de la **Haute Garonne (31)** et de la **Loire Atlantique (44)**. Ces trois departements sont, à notre sens représentatifs de l'ensemble des risques auxquels sont soumises les habitations en France. 
+![2](https://zupimages.net/up/22/51/eenp.png "i2") 
 
 <!-- UTILISATION -->
 ## Utilisation
@@ -43,14 +41,38 @@ Notre projet se décompose en deux parties :
 
 ### Statistiques Descriptives
 
-Les notebooks ```INSEE.ipynb```, ```Etude_Base_Argiles.ipynb``` et ```Stats_Nucleaire.ipynb``` effectuent des statistiques descriptives. 
+Les notebooks suivant effectuent des statistiques descriptives. 
+- ```INSEE.ipynb``` effectue des statistiques générales sur l'ensemble des risques auxquels est exposé la population française.
+- ```Etude_Base_Argiles.ipynb``` présente des statistiques sur le risque de sécheresse et focalisés sur nos 3 départements d'étude (13, 31 et 44)
+- ```Stats_Nucleaire.ipynb``` présente des statistiques sur le risque nucléaire pour l'ensemble du territoire français. 
 
+## Modélisation 
+Les attendus du projet comprennent une partie modélisation. Les modélisations que nous avons faites sont les suivantes : 
+- Nous avons codé un modèle de forecasting de température de type SARIMA. Ce dernier est entrainé sur le base ```temperature_dep.csv``` entre 2010 et 2019, testé entre 2019 et mi 2022 et utilisé pour prédire les temperéture à l'horizon 2030. Le code de ce dernier se trouve dant le module ```temperature.py``` dont le notebook correspondant est ```Sarima_tempperature.ipynb```. 
+- Pour améliorer l'experience utilisateur, nous avons aussi codé un suggesteur automatique de texte dans le cas où ce dernier ferait une faute d'ortographe mineure lorsqu'il rentre le nom de la ville ou de la rue. Ce dernier repose sur la minimisation de la distance de Levenstein. Le code se trouve dans le module ```levenstein.py```
+
+![1](https://zupimages.net/up/22/51/gdvh.png "i1") 
 ### Code Principal
 
-Le code principal se trouve dans ```main.ipynb``` le notebook demande en un premier lieu d'entrer une addresse puis calcule les différents risques immobiliers liés à cette addresse, et donne une note finale. Le code fait appelle à 6 modules externes consacrés à chaque thématiques abordés (Nucléaire, Température, ...), les codes de ces modules sont détaillés dans leurs notebooks respectifs.  
-Additionelement le module ```levenstein.py``` permet de trouver plus facilement l'addresse entré.
+Le code principal se trouve dans ```main.ipynb``` le notebook demande en un premier lieu d'entrer une addresse puis calcule les différents risques immobiliers liés à cette addresse, et donne une note finale. Le code fait appelle à 6 modules que nous avons codé pour chaque risque. A chaque module est associé un notebook pour l'utilisateur (le correcteur typiquement...) qui souhaiterait les executer de manière indépendante 
+- ```Nucleaire.py``` dont le notebook correspondant est ```Nucléraire.ipynb```
+- ```Pollution.py``` dont le notebook correspondant est ```Polluant.ipynb```
+- ```secheresse.py``` dont le notebook correspondant est ```get_secheresse.ipynb```
+- ```glissement_terrrain.py``` dont le notebook correspondant est ```get_glissement_terrain.ipynb```
+- ```inondation.py``` dont le notebook correspondant est ```get_risque_inondations.ipynb```
+- ```temperature.py``` dont le notebook correspondant est ```Sarima_tempperature.ipynb```
 
+### Données
 
+Lors de ce projet, nous avons utilisé les données suivantes :
+- ```mouvement_terrain_dep.csv``` fournit un historique (date de lieu) des mouvements de terrain par département. 
+- ```temperature_dep.csv``` fournit un historique des temperature (série temporelle) à la maille journalière et sur une profondeur d'historique de 10 ans.
+- ```Inondation``` (gpd file) fournit un zonage des risques d'inondation en france (classées sur une échelle de risque allant de 1 à 4)
+- ```AleaRGdep_L93``` (gpd gile) fournit un zonage des retrait d'argiles en france, permet d'estimer la sécheresse des sols d'une région et donc de quaitifier les risques potentiels sur une habitation (fissure, écroulement...)
+- ```centrales_nucleaires.csv``` fournit les coordonnées GPS de toutes les centrales nucléaires de la métropole
+- ```CO.csv```, ```PM10.csv```, ```SO2.csv``` fournit un historique des niveau de pollution en monoxide de carbone, particules fines et dioxyde de souffre. 
+- ```adresses-dep.csv``` resence toutes les adresses de la métropole et leur coordonnées GPS
+- ```INSEE.ipynb``` resence l'ensemble des risques auxquels est soumis le territoire français. 
 
 <!-- CONTACT -->
 ## Contact
