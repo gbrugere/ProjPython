@@ -54,13 +54,13 @@ Additionelement le module ```levenstein.py``` permet de trouver plus facilement 
 ### Données
 
 Lors de ce projet, nous avons utilisé les données suivantes :
-- mouvement_terrain_dep.csv fournit un historique (date de lieu) des mouvements de terrain par département. 
-- temperature_dep.csv fournit un historique des temperature (série temporelle) à la maille journalière et sur une profondeur d'historique de 10 ans.
-- Inondation (gpd file) fournit un zonage des risques d'inondation en france (classées sur une échelle de risque allant de 1 à 4)
-- AleaRGdep_L93 fournit un zonage des retrait d'argiles en france, permet d'estimer la sécheresse des sols d'une région et donc de quaitifier les risques potentiels sur une habitation (fissure, écroulement...)
-- centrales_nucleaires.csv fournit les coordonnées GPS de toutes les centrales nucléaires de la métropole
-- CO.csv, PM10.csv, SO2.csv fournit un historique des niveau de pollution en monoxide de carbone, particules fines et dioxyde de souffre. 
-- adresses-dep.csv resence toutes les adresses de la métropole et leur coordonnées GPS
+- ```mouvement_terrain_dep.csv``` fournit un historique (date de lieu) des mouvements de terrain par département. 
+- ```temperature_dep.csv``` fournit un historique des temperature (série temporelle) à la maille journalière et sur une profondeur d'historique de 10 ans.
+- ```Inondation``` (gpd file) fournit un zonage des risques d'inondation en france (classées sur une échelle de risque allant de 1 à 4)
+- ```AleaRGdep_L93``` fournit un zonage des retrait d'argiles en france, permet d'estimer la sécheresse des sols d'une région et donc de quaitifier les risques potentiels sur une habitation (fissure, écroulement...)
+- ```centrales_nucleaires.csv``` fournit les coordonnées GPS de toutes les centrales nucléaires de la métropole
+- ```CO.csv```, ```PM10.csv```, ```SO2.csv``` fournit un historique des niveau de pollution en monoxide de carbone, particules fines et dioxyde de souffre. 
+- ```adresses-dep.csv``` resence toutes les adresses de la métropole et leur coordonnées GPS
 
 <!-- CONTACT -->
 ## Contact
