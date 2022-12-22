@@ -25,7 +25,7 @@ Projet mené dans le cadre de notre 2A à l'ENSAE.
 <!-- IDEE PRINCIPALE -->
 ## Idée principale
 
-![2](https://zupimages.net/up/22/51/eenp.png "i2).
+![2](https://zupimages.net/up/22/51/eenp.png "i2"). 
 ![1](https://zupimages.net/up/22/51/gdvh.png "i1").
 
 Nous proposons une évaluation des risques naturels auxquels est soumis une habitation. L'utilisateur entre une adresse et reçoit un diagnostique complet des risques auxquels est soumise son habitation. Pour des raisons de taille des données nous nous avons limité notre travail aux départements des Bouches du **Rhône (13)**, de la **Haute Garonne (31)** et de la **Loire Atlantique (44)**. Ces trois departements sont, à notre sens représentatifs de l'ensemble des risques auxquels sont soumises les habitations en France. 
