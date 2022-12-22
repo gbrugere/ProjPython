@@ -11,7 +11,7 @@ def adresse_to_gpd(df_adresse):
 
 #Coordonnées de l'habitation (en géometry) ->risque d'inondation
 #gpd_adresses : tables geopandas qui contient les adresses du département
-def adresse_to_geometry(dep,num,nom_voie,ville,code_postal):
+def adresse_to_geometry(dep,num,nom_voie,ville,code_postal, gdp_adresses):
   return(gpd_adresses[(gpd_adresses["numero"] == num) & (gpd_adresses["nom_commune"] == ville) & (gpd_adresses["nom_voie"] == nom_voie)]["geometry"])
 
 #Fonction geometry ->risque
